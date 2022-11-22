@@ -31,6 +31,13 @@ body {
 
 .btn-rating {
   background-color: var(--orange) ;
+  transition: all 0.15s ease-in-out;
+
+}
+
+.btn-rating:hover {
+  background-color: var(--white);
+  color: var(--orange);
 }
 @media (min-width:500px) {
   .wrapper{
