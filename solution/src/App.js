@@ -1,5 +1,8 @@
 import star from '../src/images/icon-star.svg'
 function App() {
+  const Button = ({ number }) => {
+    return <button className="btn-number bg-gray-700 h-10 w-10 rounded-full pt-1 text-gray-200 focus:bg-gray-400 transition-all duration-300">{number}</button>
+  }
   return (
 
     <>
@@ -9,11 +12,11 @@ function App() {
       <p className="text-gray-400 mb-10">Please let us know how we did with your support request. All feedback is appreciated 
   to help us improve our offering!</p>
       <ul className="grid grid-cols-5 gap-3 mb-10">
-        <li><button>1</button></li>
-        <li><button>2</button></li>
-        <li><button>3</button></li>
-        <li><button>4</button></li>
-        <li><button>5</button></li>
+        <li><Button number={1} /></li>
+        <li><Button number={2} /></li>
+        <li><Button number={3} /></li>
+        <li><Button number={4} /></li>
+        <li><Button number={5} /></li>
       </ul>
       <div className="text-center">
       <button className="btn-rating w-full text-white uppercase tracking-wide pt-3 pb-2 rounded-full">Submit</button>

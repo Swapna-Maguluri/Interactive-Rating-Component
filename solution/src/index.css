@@ -39,6 +39,10 @@ body {
   background-color: var(--white);
   color: var(--orange);
 }
+
+.btn-number:hover {
+  background-color: var(--orange);
+}
 @media (min-width:500px) {
   .wrapper{
     width: 400px;
